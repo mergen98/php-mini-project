@@ -4,7 +4,7 @@ return [
     'database' => [
         'host' => 'localhost',
         'port' => '33306',
-        'dbname' => 'iqf_portal',
+        'dbname' => 'phpmini',
         'charset' => 'utf8mb4',
     ]
 ];
