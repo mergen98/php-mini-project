@@ -8,10 +8,6 @@ $heading = "Notes";
 $note = $db->query('SELECT * FROM notes where id = :id',
     ['id' => $_GET['id']])->findOrFail();
 
-if(!$note){
-    abort();
-}
-
 authorize($note['user_id'] === $currentuserId);
 
-require "views/note.view.php";
+require "views/notes/show.view.php";
